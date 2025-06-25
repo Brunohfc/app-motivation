@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.motivation"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.motivation"
@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-
+    implementation (libs.material)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="tela_inicial_cor">#60D5A8</color>
+    <color name="butao_cor">#346B55</color>
+
 </resources>
