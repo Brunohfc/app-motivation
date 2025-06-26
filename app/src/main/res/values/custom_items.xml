@@ -10,4 +10,8 @@
         <item name="color">@color/white</item>
     </style>
 
+    <style name="text_bold" parent="">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>

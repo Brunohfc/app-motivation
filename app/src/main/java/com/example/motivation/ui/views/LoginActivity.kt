@@ -1,12 +1,12 @@
-package com.example.motivation
+package com.example.motivation.ui.views
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.motivation.R
 import com.example.motivation.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {

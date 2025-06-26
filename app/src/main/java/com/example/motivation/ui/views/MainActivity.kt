@@ -1,11 +1,10 @@
-package com.example.motivation
+package com.example.motivation.ui.views
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.motivation.databinding.ActivityLoginBinding
+import com.example.motivation.R
 import com.example.motivation.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         var nomeUsuario = binding.texViewName
-        nomeUsuario.text = intent.extras?.getString("usuario") ?: "Usuario nao encontrado"
+        nomeUsuario.text = "Olá ${intent.extras?.getString("usuario") ?: "Usuario nao encontrado"}"
     }
 
 

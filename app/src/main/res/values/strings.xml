@@ -3,4 +3,5 @@
     <string name="text_view_mensagem_inicial">Vamos começar?</string>
     <string name="text_view_usuario_nome">Qual seu nome?</string>
     <string name="button_salvar">Salvar</string>
+    <string name="button_nova_frase">Nova Frase</string>
 </resources>

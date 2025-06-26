@@ -8,7 +8,7 @@
     android:background="@color/tela_inicial_cor"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context=".LoginActivity">
+    tools:context=".ui.LoginActivity">
 
     <TextView
         android:id="@+id/text_view_vamos_comecar"
