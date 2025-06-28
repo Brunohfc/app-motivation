@@ -1,13 +1,14 @@
 package com.example.motivation.ui.views
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.motivation.R
 import com.example.motivation.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityMainBinding;
 
@@ -27,6 +28,22 @@ class MainActivity : AppCompatActivity() {
 
         var nomeUsuario = binding.texViewName
         nomeUsuario.text = "Olá ${intent.extras?.getString("usuario") ?: "Usuario nao encontrado"}"
+        setListeners()
+    }
+
+    override fun onClick(view: View) {
+        if(view.id == R.id.button_new_sentence){
+            handleNewSentence()
+        }
+    }
+
+    private fun handleNewSentence(){
+
+    }
+
+
+    private fun setListeners(){
+        binding.buttonNewSentence.setOnClickListener(this)
     }
 
 
