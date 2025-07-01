@@ -26,7 +26,7 @@ class PhrasesRepository {
         Phrase("Riscos devem ser corridos, porque o maior perigo é não arriscar nada!", sunny)
     )
 
-    fun obterFrase() :String{
+    fun obterFrase(filter: Int) :String{
         return "Frase teste"
     }
 }
