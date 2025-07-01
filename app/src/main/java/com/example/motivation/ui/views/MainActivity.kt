@@ -2,6 +2,7 @@ package com.example.motivation.ui.views
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
@@ -77,6 +78,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun handleNewSentence() {
         binding.textViewSentences.text = phrasesRepository.obterFrase(filter)
+        if(binding.textViewSentences.text.equals(Constantes.MENSAGENS.LISTA_VAZIA)){
+            Toast.makeText(this, "Lista de frases vazia", Toast.LENGTH_LONG).show()
+        }
     }
 
 

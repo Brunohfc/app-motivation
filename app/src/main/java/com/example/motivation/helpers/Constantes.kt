@@ -7,4 +7,8 @@ class Constantes private constructor(){
         const val PHRASE_SUNNY = 1
         const val PHRASE_HAPPY = 2
     }
+
+    object MENSAGENS{
+        const val LISTA_VAZIA = "Lista vazia"
+    }
 }

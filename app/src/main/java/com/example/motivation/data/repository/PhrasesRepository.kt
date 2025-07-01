@@ -1,6 +1,7 @@
 package com.example.motivation.data.repository
 
 import com.example.motivation.helpers.Constantes
+import kotlin.random.Random
 
 data class Phrase(val descricao: String, val categoria: Int)
 
@@ -9,6 +10,7 @@ class PhrasesRepository {
 
    private val happy = Constantes.PHRASE.PHRASE_HAPPY
    private val sunny = Constantes.PHRASE.PHRASE_SUNNY
+   private val all = Constantes.PHRASE.PHRASE_ALL
 
     private val listaFrases: List<Phrase> = listOf(
         Phrase("Não sabendo que era impossível, foi lá e fez.", happy),
@@ -27,6 +29,13 @@ class PhrasesRepository {
     )
 
     fun obterFrase(filter: Int) :String{
-        return "Frase teste"
+
+        if(listaFrases.isNotEmpty()){
+            val filtrado = listaFrases.filter { it.categoria == filter || filter == all }
+            val aleatorio = Random.nextInt(filtrado.size)
+            return filtrado[aleatorio].descricao
+
+        }
+        return "Lista vazia"
     }
 }
