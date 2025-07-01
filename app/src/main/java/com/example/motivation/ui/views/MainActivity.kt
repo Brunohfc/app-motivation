@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.motivation.R
+import com.example.motivation.data.repository.PhrasesRepository
 import com.example.motivation.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityMainBinding;
+    private val phrasesRepository : PhrasesRepository = PhrasesRepository()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -29,6 +31,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var nomeUsuario = binding.texViewName
         nomeUsuario.text = "Olá ${intent.extras?.getString("usuario") ?: "Usuario nao encontrado"}"
         setListeners()
+        handleNewSentence()
     }
 
     override fun onClick(view: View) {
@@ -38,7 +41,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun handleNewSentence(){
-
+        binding.textViewSentences.text = phrasesRepository.obterFrase()
     }
 
 

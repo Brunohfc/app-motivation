@@ -60,7 +60,7 @@
         android:text="afdsvdvsd" />
 
     <TextView
-        android:id="@+id/tex_view_sentences"
+        android:id="@+id/text_view_sentences"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -75,7 +75,7 @@
         android:id="@+id/view_sentences_separete"
         android:layout_width="150dp"
         android:layout_height="4dp"
-        android:layout_below="@+id/tex_view_sentences"
+        android:layout_below="@+id/text_view_sentences"
         android:layout_centerInParent="true"
         android:background="@color/butao_cor"
         android:elevation="6dp" />
@@ -84,7 +84,7 @@
         android:id="@+id/button_new_sentence"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tex_view_sentences"
+        android:layout_below="@+id/text_view_sentences"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:layout_marginTop="180dp"
